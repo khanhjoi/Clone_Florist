@@ -1,9 +1,13 @@
 import React from 'react'
-
+import SlidePage from '../components/mainPage/SlidePage';
+import Benefits from '../components/mainPage/Benefits';
+import Categories from '../components/mainPage/Categories';
 const MainPage = () => {
   return (
     <>  
-      <div>MainPage</div>
+      <SlidePage />
+      <Benefits />
+      <Categories />
     </>
   )
 }

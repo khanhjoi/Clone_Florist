@@ -8,7 +8,7 @@ import image from '../../assets/logo.png.webp'
 const SliderHeader = ({show, setIsShow}) => {
   return (
     <>
-      <div className={`transition-all duration-500 fixed bg-white top-0 bottom-0 md:w-2/6 sm:w-3/6 w-4/6 z-10 shadow-md z-20
+      <div className={`transition-all duration-500 fixed bg-white top-0 bottom-0 md:w-2/6 sm:w-3/6 w-4/6  shadow-md z-20
             ${show ?  "left-0": "-left-full"}
             ${show ?  "opacity-100": "opacity-0"}
       `}>

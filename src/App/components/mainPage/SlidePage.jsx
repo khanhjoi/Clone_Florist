@@ -64,7 +64,7 @@ const SlidePage = () => {
           <button
             key={index}
             className={`rounded-full p-3 bg-slate-200 shadow-md mx-2 
-                ${index === currentSlide ? "bg-pink-400" : ""}
+                ${index === currentSlide ? "bg-pink-300" : ""}
               `}
             onClick={() => {
               changeSlide(index);

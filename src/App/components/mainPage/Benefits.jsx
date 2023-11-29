@@ -2,7 +2,7 @@ import React from 'react'
 
 const Benefits = () => {
   return (
-    <div className='padding flex w-full sm:justify-center justify-between flex-wrap'>
+    <div className='padding flex flex-wrap  w-full justify-center lg:justify-between my-10'>
       <div className='flex lg:w-1/5 w-68 my-10'>
         <img src='https://preview.colorlib.com/theme/florist/img/benefit/benefit-1.png.webp' className='w-12 h-12 mr-6'/>
         <div>

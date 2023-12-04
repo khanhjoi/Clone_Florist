@@ -48,6 +48,7 @@ const Categories = () => {
       {categories.length >= 0 &&
         categories.map((category, index) => (
           <div
+            key={index}
             style={{ backgroundImage: `url(${category.url})` }}
             className="bg-cover h-[30rem]  bg-center bg-no-repeat shadow-md rounded-md relative  my-4 lg:w-1/5 md:my-4 md:w-2/5 w-3/5 "
           >

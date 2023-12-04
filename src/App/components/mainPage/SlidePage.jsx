@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import Button from "../button/Button";
 const SlidePage = () => {
   let count = 0;
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -54,9 +54,7 @@ const SlidePage = () => {
           <p className="text-4xl font-medium font-serif mt-4">
             Making beautiful flowers a part of your life.
           </p>
-          <button className="mt-8 bg-pink-500 py-2 px-6 rounded-3xl font-medium text-slate-100 shadow-lg">
-            SHOP NOW
-          </button>
+          <Button content={"SHOP NOW"}/>
         </div>
       </div>
       <div className="absolute bottom-14 pl-36 md:pl-60 lg:pl-80 w-10 flex ">

@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../button/Button'
+import Button from '../SmallComponents/Button'
 const Contact = () => {
   return (
     <div className='padding w-full h-[32rem] my-10 bg-cover bg-center' style={{backgroundImage : `url(https://preview.colorlib.com/theme/florist/img/call-bg.jpg.webp)`}}>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Button from "../button/Button";
+import Button from "../SmallComponents/Button";
 const SlidePage = () => {
   let count = 0;
   const [currentSlide, setCurrentSlide] = useState(0);

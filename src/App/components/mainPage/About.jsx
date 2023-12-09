@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosPlay } from "react-icons/io";
 
-import Button from "../button/Button";
+import Button from "../SmallComponents/Button";
 const About = () => {
   return (
     <div className="padding mt-10 w-full">

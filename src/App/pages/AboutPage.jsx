@@ -7,7 +7,7 @@ import TeamMember from '../components/AboutPage/TeamMember'
 const AboutPage = () => {
   return (
     <>
-      <div className='w-full text-center h-36 bg-cover py-6 ' style={{backgroundImage : 'url(https://preview.colorlib.com/theme/florist/img/breadcrumb-bg.jpg.webp)'}}>
+      <div className='w-full text-center h-36 bg-cover py-6 shadow-md' style={{backgroundImage : 'url(https://preview.colorlib.com/theme/florist/img/breadcrumb-bg.jpg.webp)'}}>
         <p className='font-serif text-4xl'>About us</p>
         <div className='text-lg mt-4'>
           <Link to="/" className='pr-2 font-thin border-r-2 border-cyan-950 active:text-pink-400'>HOME</Link>

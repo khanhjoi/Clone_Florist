@@ -102,19 +102,24 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full mt-10 flex">
-        <div className="">
-          <div>Get in touch</div>
-          <div>
+      <div className="w-full mt-10 md:flex md:justify-between border-y-2">
+        <div className="w-full border-b-2 py-2 md:px-2 md:py-6 md:border-b-0 md:border-r-2 md:w-2/4 ">
+          <div className="font-serif text-2xl">Get in touch</div>
+          <div className="font-thin">
             69 North Cleveland Street, Memphis,USA. (123) 8111 9210 - (012) 1111
             6868 Florisr@supportthem.com
           </div>
         </div>
-        <div className="">
-          <div>New Letter</div>
-          <div>Subcribe to our newsletter to get more free tips. No Spam, Promise.</div>
-          <Input  placeholder="Email"/>
+        <div className="w-full md:w-2/4 md:px-2 md:py-6 py-2 md:ml-4">
+          <div className="font-serif text-2xl">New Letter</div>
+          <div className="font-thin">
+            Subcribe to our newsletter to get more free tips. No Spam, Promise.
+          </div>
+          <Input placeholder="Email" style="pl-4 mt-4 w-56 rounded-xl focus:bg-slate-100 focus:border-pink-300 mr-2"/>
         </div>
+      </div>
+      <div className="w-full text-center my-2">
+        Copyright ©2023 All rights reserved | This template is made with by Colorlib
       </div>
     </div>
   );

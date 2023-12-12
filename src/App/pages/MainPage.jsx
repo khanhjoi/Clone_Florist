@@ -18,7 +18,7 @@ const MainPage = () => {
       <Products title={"New Arrivals"}/>
       <Contact />
       <Post />
-      <Footer />
+      
     </>
   )
 }

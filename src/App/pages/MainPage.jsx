@@ -6,7 +6,7 @@ import About from '../components/mainPage/About';
 import Products from '../components/Products/Products';
 import Contact from '../components/mainPage/Contact';
 import Post from '../components/mainPage/Post';
-import Footer from '../components/mainPage/Footer';
+
 
 const MainPage = () => {
   return (
@@ -18,7 +18,6 @@ const MainPage = () => {
       <Products title={"New Arrivals"}/>
       <Contact />
       <Post />
-      
     </>
   )
 }

@@ -8,6 +8,7 @@ import store from "./App/features/store.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./App/routers/Root.jsx";
 import { MainPage, ErrorPage, AboutPage} from './App/pages/index.js'
+import ServicesPage from "./App/pages/ServicesPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,16 @@ const router = createBrowserRouter([
         element: <MainPage />,
       },
       {
+        path: "home",
+        element: <MainPage />,
+      },
+      {
         path: "about",
         element: <AboutPage />,
+      },
+      {
+        path: "services",
+        element: <ServicesPage/>,
       },
     ]
   },

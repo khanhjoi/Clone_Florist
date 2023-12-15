@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BreadCrumb from "../components/SmallComponents/BreadCrumb";
 import { IoIosPlay } from "react-icons/io";
+import From from "../components/SmallComponents/From";
 const ServicesPage = () => {
   const [services, setService] = useState([
     {
@@ -26,14 +27,26 @@ const ServicesPage = () => {
     },
   ]);
 
+  const inputs = [
+    { placeholder: "Name", type: "text" },
+    { placeholder: "Phone", type: "number" },
+    { placeholder: "Email", type: "email" },
+    {
+      placeholder: "Type services",
+      type: "select",
+      options: ["Custom orders", "Event decoration", "Green landscapes"],
+    },
+    {placeholder: "Message", type: "textAria"}
+  ];
+
   return (
     <div className="w-full">
       <BreadCrumb
         titleBreadCrumb="Services"
         BreadCrumbLink={["Home", "SERVICES"]}
       />
-      <div className="padding w-full text-center my-10">
-        <div className="w-2/3 mx-auto">
+      <div className="padding w-full text-center my-10 md:flex">
+        <div className="w-full md:w-1/3 mx-auto md:mr-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -49,7 +62,8 @@ const ServicesPage = () => {
             </div>
           ))}
         </div>
-        <div className="w-full">
+
+        <div className="w-full md:w-2/3 md:mr-8">
           <div
             className="bg-slate-200 w-full h-[24rem] mx-auto rounded-md shadow-lg relative bg-cover bg-center cursor-pointer my-2"
             style={{
@@ -65,14 +79,19 @@ const ServicesPage = () => {
           <div className="my-2 text-left text-xl text-pink-500 font-mono">
             From $60 - $300
           </div>
-          <div className="font-thin text-left">
+          <div className="font-thin text-left mb-8">
             For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada,
             growing flowers that can be dried and incorporated into late fall
             and winter floral arrangements has been a game-changer. During her
             growing season, this farmer-florist relies on a vivid palette of
-            annuals, perennials and ornamental grasses to supply her studio.  
+            annuals, perennials and ornamental grasses to supply her studio.
           </div>
-          
+          <From
+            title="GET A QUOTE"
+            titleStyle="text-3xl font-serif"
+            inputs={inputs}
+            inputStyle="my-4 pl-4 w-2/4 h-12 rounded-md shadow-sm"
+          />
         </div>
       </div>
     </div>

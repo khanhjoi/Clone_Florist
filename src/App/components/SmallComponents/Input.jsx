@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-const Input = ({ placeholder, style}) => {
+const Input = ({ type, placeholder, style }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onChange = (e) => {
-    setInputValue(e.target.value)
+    setInputValue(e.target.value);
   };
 
-  const onsubmit = (e) => {
-
-  }
+  const onsubmit = (e) => {};
 
   return (
-    <div className="relative">
-      <input
+    <input
       value={inputValue}
       onChange={(e) => {
         onChange(e);
       }}
+      type={type}
       placeholder={placeholder}
-      className={`transition-all duration-200 w-32 h-10 border rounded-sm ${style} `}
+      className={`${style} transition-all duration-200 h-10 border rounded-md`}
     />
-      <Button content="Submit"/>
-    </div> 
   );
 };
 

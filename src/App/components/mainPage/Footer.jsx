@@ -4,6 +4,7 @@ import image from "../../../assets/logo.png.webp";
 
 import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Input from "../SmallComponents/Input";
+import Button from "../SmallComponents/Button";
 
 const Footer = () => {
   return (
@@ -115,7 +116,10 @@ const Footer = () => {
           <div className="font-thin">
             Subcribe to our newsletter to get more free tips. No Spam, Promise.
           </div>
-          <Input placeholder="Email" style="pl-4 mt-4 w-56 rounded-xl focus:bg-slate-100 focus:border-pink-300 mr-2"/>
+          <div className="flex">
+            <Input placeholder="Email" type="text" style="pl-4 mt-4 w-56 rounded-xl focus:bg-slate-100 focus:border-pink-300 mr-2"/>
+            <Button content="Submit" style="inline-block"/>
+          </div>
         </div>
       </div>
       <div className="w-full text-center my-2">
